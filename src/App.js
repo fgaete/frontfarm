@@ -9,6 +9,7 @@ import GameEdit from './GameEdit';
 import ConsoleAdd from './ConsoleAdd';
 import ConsoleEdit from './ConsoleEdit';
 import ConsoleList from './ConsoleList';
+import ConsoleDelete from './ConsoleDelete';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -69,6 +70,7 @@ function App() {
             <Route path='/consolas' element={<ConsoleList/>} exact></Route>
             <Route path='/addconsole' element={<ConsoleAdd/>} exact></Route>
             <Route path='/editconsole/:consoleid' element={<ConsoleEdit/>} exact></Route>
+            <Route path='/deleteconsole/:consoleid' element={<ConsoleDelete/>} exact></Route>
           </Routes>
         </BrowserRouter>
     </div>

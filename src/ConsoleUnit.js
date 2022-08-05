@@ -10,7 +10,7 @@ function ConsoleUnit({consola}){
                         <td>{consola.company}</td>
                         <td>{consola.year}</td>
                         <td><Link to={`/editconsole/${consola.id}`}><button className="btn btn-success">Editar</button></Link></td>
-                        <td><button className="btn btn-danger">Borrar</button></td>
+                        <td><Link to={`/deleteconsole/${consola.id}`}><button className="btn btn-danger">Borrar</button></Link></td>
                     </tr>
                 </tbody>
     )
